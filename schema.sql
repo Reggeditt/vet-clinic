@@ -8,11 +8,3 @@ CREATE TABLE animals (
     neutered boolean,
     weight_kg decimal
 ); 
-
-/*
-name: string
-date_of_birth: date
-escape_attempts: integer
-neutered: boolean
-weight_kg: decimal
-*/
