@@ -20,6 +20,8 @@ BEGIN;
 UPDATE animals SET species = 'unspecified';
 SELECT species FROM animals;
 ROLLBACK;
+SELECT species FROM animals;
+
 
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
@@ -28,17 +30,22 @@ SELECT species FROM animals;
 COMMIT;
 SELECT * FROM animals;
 
+
 BEGIN;
 DELETE FROM animals;
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals;
 
+
 BEGIN;
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
 SAVEPOINT deleteAfter2022;
+SELECT * FROM animals;
 UPDATE animals SET weight_kg = (weight_kg * -1);
+SELECT * FROM animals;
 ROLLBACK TO deleteAfter2022;
+SELECT * FROM animals;
 UPDATE animals SET weight_kg = (weight_kg * -1) WHERE weight_kg < 0;
 COMMIT;
 SELECT * FROM animals;
