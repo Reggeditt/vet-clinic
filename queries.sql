@@ -77,7 +77,7 @@ SELECT species.name, COUNT(*) FROM animals JOIN species ON animals.species_id = 
 SELECT animals.name AS animal, species.name AS species, owners.full_name AS owner FROM 
 (animals JOIN species ON animals.species_id = species.id) JOIN 
 owners ON animals.owner_id = owners.id 
-WHERE species.name = 'pokemon' AND 
+WHERE species.name = 'digimon' AND 
 owners.full_name = 'Jennifer Orwell';
 
 SELECT animals.name AS animal, owners.full_name AS owner FROM 
