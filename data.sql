@@ -1,9 +1,10 @@
 /* Populate database with sample data. */
 
-INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Agumon', DATE '2020-02-03', 10.23, true, 0);
-
-INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Gabumon', DATE '2018-11-15', 8.0, true, 2);
-
-INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Pikachu', DATE '2021-01-07', 15.04, false, 1);
-
-INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Devimon', DATE '2017-05-12', 11.0, true, 5);
+INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts)
+VALUES ('Charmander', DATE '2020-02-08', -11.00, false, 0),
+('Plantmon', DATE '2021-11-15', -5.7, true, 2),
+('Squirtle', DATE '1993-04-02', -12.13, false, 3),
+('Angemon', DATE '2015-06-12', -45.00, true, 1),
+('Boarmon', DATE '2005-06-07', 20.40, true, 7),
+('Blossom', DATE '1998-10-13', 17.00, true, 3),
+('Ditto', DATE '2022-05-14', 22.00, true, 4);
