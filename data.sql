@@ -45,35 +45,38 @@ VALUES
     ('Maisy Smith', 26, DATE '2019-01-17'),
     ('Stephanie Mendez', 64, DATE '1981-05-04'),
     ('Jack Harkness', 38, DATE '2008-06-08');
+select * from vets;
 
--- Insert data for vet specialties
-INSERT INTO specializations (vet_id, species)
+
+INSERT INTO specializations (vet_id, species_id)
 VALUES
-    (1, 'Pokemon'),
-    (3, 'Digimon'),
-    (3, 'Pokemon'),
-    (4, 'Digimon');
+    (5, 1),
+    (7, 2),
+    (7, 1),
+    (8, 2);
+select * from specializations;
 
--- Insert data for visits
+
 INSERT INTO visits (animal_id, vet_id, visit_date)
 VALUES
-    (1, 1, DATE '2020-05-24'),
-    (1, 3, DATE '2020-07-22'),
-    (2, 4, DATE '2021-02-02'),
-    (3, 2, DATE '2020-01-05'),
-    (3, 2, DATE '2020-03-08'),
-    (3, 2, DATE '2020-05-14'),
-    (4, 3, DATE '2021-05-04'),
-    (5, 4, DATE '2021-02-24'),
-    (6, 2, DATE '2019-12-21'),
-    (6, 1, DATE '2020-08-10'),
-    (6, 2, DATE '2021-04-07'),
-    (7, 3, DATE '2019-09-29'),
-    (8, 4, DATE '2020-10-03'),
-    (8, 4, DATE '2020-11-04'),
-    (9, 4, DATE '2019-01-24'),
-    (9, 4, DATE '2019-05-15'),
-    (9, 4, DATE '2020-02-27'),
-    (9, 4, DATE '2020-08-03'),
-    (10, 3, DATE '2020-05-24'),
-    (10, 1, DATE '2021-01-11');
+    (1, 5, DATE '2020-05-24'),
+    (1, 7, DATE '2020-07-22'),
+    (2, 8, DATE '2021-02-02'),
+    (3, 6, DATE '2020-01-05'),
+    (3, 6, DATE '2020-03-08'),
+    (3, 6, DATE '2020-05-14'),
+    (4, 7, DATE '2021-05-04'),
+    (5, 8, DATE '2021-02-24'),
+    (6, 6, DATE '2019-12-21'),
+    (6, 5, DATE '2020-08-10'),
+    (6, 6, DATE '2021-04-07'),
+    (7, 7, DATE '2019-09-29'),
+    (8, 8, DATE '2020-10-03'),
+    (8, 8, DATE '2020-11-04'),
+    (9, 6, DATE '2019-01-24'),
+    (9, 6, DATE '2019-05-15'),
+    (9, 6, DATE '2020-02-27'),
+    (9, 6, DATE '2020-08-03'),
+    (10, 7, DATE '2020-05-24'),
+    (10, 5, DATE '2021-01-11');
+select * from visits;
