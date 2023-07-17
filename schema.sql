@@ -48,3 +48,4 @@ CREATE TABLE visits (
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 CREATE INDEX visits_animal_id_idx ON visits (animal_id);
+CREATE INDEX visits_animal_id_idx ON visits (vet_id);
